@@ -5,7 +5,7 @@ export function getMorosoInfo(paidCurrentMonth: boolean): {
   const today = new Date()
   const dayOfMonth = today.getDate()
 
-  const CUTOFF_DAY = 10 // volver a 10 en producción
+  const CUTOFF_DAY = 10
 
   if (paidCurrentMonth || dayOfMonth <= CUTOFF_DAY) {
     return { isMoroso: false, daysMoroso: 0 }
