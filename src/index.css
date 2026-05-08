@@ -1,0 +1,46 @@
+@import "@fontsource-variable/geist";
+@import "@fontsource-variable/geist-mono";
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #f59e0b;
+  --color-gold-dark: #d97706;
+  --color-gold-light: #fbbf24;
+  --color-surface: #18181b;
+  --color-card: #27272a;
+  --color-border: #3f3f46;
+  --color-muted: #71717a;
+  --color-moroso: #ef4444;
+  --color-success: #22c55e;
+
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, monospace;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #09090b;
+  color: #fafafa;
+  font-family: var(--font-sans);
+  margin: 0;
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+/* Scrollbar discreta para dark theme */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #18181b;
+}
+::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border-radius: 2px;
+}
